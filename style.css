@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  width: 1440px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,7 @@ body {
 }
 
 .main-container {
-  width: 80%;
+  width: 144rem;
   height: 50%;
   background: hsl(244, 38%, 16%);
   display: flex;
@@ -116,17 +116,22 @@ body {
 @media only screen and (max-width: 81.5rem) {
   html {
     font-size: 62.5%;
-  }
-
-  body {
-    width: 37.5rem;
-    height: 90vh;
     overflow: hidden;
   }
 
+  body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .main-container {
-    width: 80%;
-    height: 95%;
+    width: 37.5rem;
+    height: 100%;
     display: flex;
     flex-direction: column-reverse;
     border-radius: 1rem;
@@ -149,9 +154,10 @@ body {
 
   .main-container .main-text .content .content-top {
     width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .main-container .main-text .content h1 {
@@ -175,7 +181,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 40%;
+    height: 50%;
   }
 
   .main-container .main-text .content .lists ul {
