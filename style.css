@@ -25,6 +25,7 @@ body {
   height: 50%;
   background: hsl(244, 38%, 16%);
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
@@ -47,7 +48,7 @@ body {
 }
 
 .content-top {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -100,7 +101,6 @@ body {
   width: 50%;
   height: 100%;
   background-color: hsl(277, 64%, 61%);
-  overflow: hidden;
   border-radius: 0 1rem 1rem 0;
 }
 
@@ -113,29 +113,26 @@ body {
 
 /* Media Querries */
 
-@media only screen and (max-width: 81.5rem) {
+@media only screen and (max-width: 915px) {
   html {
     font-size: 62.5%;
-    overflow: hidden;
   }
 
   body {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
   .main-container {
+    margin: auto;
     width: 37.5rem;
-    height: 100%;
+    height: 90%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     border-radius: 1rem;
-    flex-wrap: nowrap;
   }
 
   .main-container .main-text {
@@ -147,24 +144,21 @@ body {
   .main-container .main-text .content {
     width: 90%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
   }
 
   .main-container .main-text .content .content-top {
     width: 100%;
-    height: 50%;
+    height: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .main-container .main-text .content h1 {
     font-family: "Inter", sans-serif;
     font-weight: 700;
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 3.3rem;
   }
 
   .main-container .main-text .content p {
@@ -172,16 +166,15 @@ body {
     font-weight: 400;
     color: hsla(0, 0%, 100%, 0.75);
     text-align: center;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.8rem;
   }
 
   .main-container .main-text .content .lists {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 50%;
+    height: 40%;
   }
 
   .main-container .main-text .content .lists ul {
@@ -207,7 +200,7 @@ body {
 
   .main-container .main-img {
     width: 100%;
-    height: 50%;
+    height: 30%;
     border-radius: 1rem 1rem 0 0;
   }
 
